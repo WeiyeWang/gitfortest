@@ -1,0 +1,124 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[top=0.5in,bottom=1in,left=0.5in,right=0.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{dsfont}
+\usepackage{ifthen}
+\usepackage{indentfirst}
+\usepackage{enumerate}
+\usepackage[bf,small,indentafter,pagestyles]{titlesec}
+\usepackage{titletoc}
+\usepackage[CJKnumber]{xeCJK}
+\usepackage{pifont}
+\setCJKmainfont[BoldFont=Adobe Heiti Std,ItalicFont=华文中宋]{华文中宋}
+\titleformat{\section}{\Large\bfseries}{\CJKnumber{\thesection}.}{1em}{}
+
+\renewcommand{\baselinestretch}{1.38}
+
+
+
+
+\newpagestyle{main}[\small\kai]{
+	\sethead[][][]
+	{}{}{}
+	\setfoot{}{-~\thepage~-}{}} \pagestyle{main}
+
+\def\handout{}
+
+\setCJKfamilyfont{song}{Adobe Song Std}
+\setCJKfamilyfont{kai}{Adobe Kaiti Std}
+\setCJKfamilyfont{hei}{Adobe Heiti Std}
+\setCJKfamilyfont{fangsong}{Adobe Fangsong Std}
+\setCJKfamilyfont{JL}{FZJingLeiS-R-GB}
+
+\newcommand{\song}{\CJKfamily{song}}                       % 自定义宋体
+\newcommand{\kai}{\CJKfamily{kai}}                         % 自定义楷体
+\newcommand{\hei}{\CJKfamily{hei}}                         % 自定义黑体
+\newcommand{\fangsong}{\CJKfamily{fangsong}}               % 自定义仿宋体
+\newcommand{\JL}{\CJKfamily{JL}}
+
+\newcommand{\ci}{\mathrm{i}}
+\newcommand{\me}{\mathrm{e}}
+\newcommand{\md}{\mathrm{mod}\ }
+\newcommand{\ld}{\lambda}
+\newcommand{\vct}{\overrightarrow}
+
+\newtheorem{defi}{定义~}
+\newtheorem{eg}{例~}
+\newtheorem{ex}{练习~}
+\newtheorem{rem}{注~}
+\newtheorem{thm}{定理~}
+\newtheorem{coro}{推论~}
+\newtheorem{axiom}{公理~}
+\newtheorem{prop}{性质~}
+
+\newtheoremstyle{mystyle}{0pt}{0pt}{\fangsong}{0cm}{\hei}{}{1em}{}
+\theoremstyle{mystyle}
+
+\newtheorem*{hint}{提示~}
+
+\newcommand{\vp}{\varphi}
+
+\newcommand{\mycite}[2][null]{\ifthenelse{\isundefined{\handout}}{\cite{#2}\ifthenelse{\equal{#1}{null}}{}{:P#1}}{}}
+\newcommand{\ans}[1]{\ifthenelse{\isundefined{\handout}}{#1}{}}
+
+\newcommand{\onech}[4]{\par\begin{tabular}{p{.9\textwidth}}
+		A.~#1\\
+		B.~#2\\
+		C.~#3\\
+		D.~#4
+\end{tabular}}
+
+\newcommand{\twoch}[4]{\par\begin{tabular}{p{.46\textwidth}p{.46\textwidth}}
+		A.~#1& B.~#2\\
+		C.~#3& D.~#4
+\end{tabular}}
+
+\newcommand{\vartwoch}[4]{\par\begin{tabular}{p{.46\textwidth}p{.46\textwidth}}
+		(1)~#1& (2)~#2\\
+		(3)~#3& (4)~#4
+\end{tabular}}
+
+
+\newcommand{\fourch}[4]{\par\begin{tabular}{p{.23\textwidth}p{.23\textwidth}p{.23\textwidth}p{.23\textwidth}}
+		A.~#1 &B.~#2& C.~#3& D.~#4
+\end{tabular}}
+
+\newcommand{\varfourch}[4]{\par\begin{tabular}{p{.23\textwidth}p{.23\textwidth}p{.23\textwidth}p{.23\textwidth}}
+		(1)~#1 &(2)~#2& (3)~#3& (4)~#4
+\end{tabular}}
+
+\newcommand{\blank}[1]{\underline{\hbox to #1pt{}}}
+\newcommand{\bracket}[1]{(\hbox to #1pt{})}
+
+\begin{document}
+
+\setlength{\parskip}{0em}
+
+
+
+测试段落
+
+测试段落
+
+测试段落
+
+
+\setlength{\parskip}{0.5\baselineskip}
+
+
+
+测试段落
+
+测试段落
+
+测试段落
+
+$x^2+y^2=z^2$
+
+	
+\end{document}
